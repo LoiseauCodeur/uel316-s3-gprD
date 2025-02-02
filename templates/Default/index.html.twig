@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <title>Bienvenue sur ma page Symfony!</title>
+</head>
+<body>
+   <div class="jumbotron">
+      <h1 class="display-4">Bonjour, sur le site de notre groupe !</h1>
+      <p class="lead">nous sommes étudiants et voici notre première page Symfony 4, réalisée dans le cadre de notre Licence.</p>
+      <hr class="my-4">
+   </div>
+           {% if app.user %}
+            <div class="mb-3">
+                You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+            </div>
+        {% endif %}
+   <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2025 - Licence Symfony</p>
+   </footer>
+</body>
+</html>
