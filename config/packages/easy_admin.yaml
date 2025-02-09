@@ -1,0 +1,19 @@
+easy_admin:
+    entities:
+        Post:
+            class: App\Entity\Post
+            list:
+                fields:
+                    - id
+                    - title
+                    - createdAt
+            form:
+                fields:
+                    - title
+                    - content
+            show:
+                fields:
+                    - id
+                    - title
+                    - content
+                    - createdAt

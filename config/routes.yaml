@@ -14,3 +14,14 @@ app_register:
     path: /register
     controller: App\Controller\RegisterController::register
     
+post_list:
+    path: /admin/posts
+    controller: App\Controller\PostController::listAction
+
+post_create:
+    path: /admin/posts/create
+    controller: App\Controller\PostController::createAction
+
+admin_post_list:
+    path: /admin/posts
+    controller: App\Controller\PostController::listAction
